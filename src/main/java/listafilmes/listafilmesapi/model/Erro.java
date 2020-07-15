@@ -5,6 +5,6 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class Erro {
     
-    private String mensagemErro;
+    private String mensagem;
     
 }

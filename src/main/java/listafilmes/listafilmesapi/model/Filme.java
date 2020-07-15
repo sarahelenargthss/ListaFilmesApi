@@ -11,8 +11,9 @@ public class Filme {
     
     private long id;
     private String nome;
-    private Genero genero;
+    private String genero;
     private String pais;
     private int duracao;
+    private int nota;
     
 }
