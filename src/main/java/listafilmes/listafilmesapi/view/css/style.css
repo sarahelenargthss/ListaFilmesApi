@@ -206,6 +206,7 @@ main fieldset {
     -webkit-transition: .2s;
     transition: opacity .2s;
   }
+  
 
   .slider:hover {
     opacity: 1;
