@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat Subrayada' rel='stylesheet'> <!-- titulo -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js">0</script>
+    <title>lista filmes</title>
+</head>
+
+<body>
+    <nav>
+        <a id="sair" href="javascript:sair()">sair</a>
+        <a id="editar" href="javascript:tela_login(1)">nome_usuario</a>
+        <a id="logar" href="javascript:tela_login(0)">entrar</a>
+    </nav>
+    <main>
+        <h1>Lista Filmes</h1>
+        <div class="conteudo" id="form">
+            <form oninput="nota.value=parseInt(a.value)">
+                <label for="nome">nome:</label>
+                <input class="field" type="text" name="nome" id="nome" required>
+                <label for="gen">gênero:</label>
+                <select class="field" name="gen" id="gen" required>
+                    <option value="5">ação</option>
+                    <option value="6">animação</option>
+                    <option value="7">aventura</option>
+                    <option value="8">comédia</option>
+                    <option value="9">cult</option>
+                    <option value="10">documentário</option>
+                    <option value="11">drama</option>
+                    <option value="12">fantasia</option>
+                    <option value="13">faroeste</option>
+                    <option value="4">ficção</option>
+                    <option value="14">musical</option>
+                    <option value="15">policial</option>
+                    <option value="1">romance</option>
+                    <option value="2">suspense</option>
+                    <option value="3">terror</option>
+                </select>
+                <label for="pais">país:</label>
+                <input class="field" type="text" name="pais" id="pais">
+                <label for="duracao">duração:</label>
+                <input class="field" type="number" name="duracao" id="duracao">
+                <fieldset class="field">
+                    <legend>nota</legend>
+                    <input class="slider" type="range" id="a" name="a" min="0" max="10" value="0">
+                    <output name="nota" id="nota" for="a">0</output>
+                </fieldset>
+                <br>
+                <input onclick="onSave()" class="colorful" type="button" value="salvar">
+                <input onclick="changeFrame(0)" class="colorful" type="reset" value="cancelar">
+            </form>
+        </div>
+        <div class="conteudo" id="table">
+            <button id="addFilme" onclick="changeFrame(1)">adicionar filme</button>
+            <br>
+            <div id="modal">
+                <div id="divExclusao">
+                    <p>tem certeza que deseja excluir o filme <span id="nomeEmpregadoExcluir"></span> de sua lista?</p>
+                    <div>
+                        <button id="sim" class="opExclusao">Sim</button>
+                        <button id="nao" class="opExclusao">Não</button>
+                    </div>
+                </div>
+            </div>
+            <table id="default_table">
+                <tr>
+                    <th>id</th>
+                    <th>nome</th>
+                    <th>gênero</th>
+                    <th>país</th>
+                    <th>duração</th>
+                    <th>nota</th>
+                    <th>ações</th>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+
+</html>
