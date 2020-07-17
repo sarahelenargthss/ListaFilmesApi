@@ -11,4 +11,4 @@ Não foram implementados os seguintes pontos:
 
 O trabalho 2, parte 2 se encontra na parte de view do modelo MVC. (ele foi entregue somente em 16/07/2020).
 
-**[Acesse aqui a documentação completa da API](listadefilmes.docs.apiary.io)**
+**[Acesse aqui a documentação completa da API](https://listadefilmes.docs.apiary.io)**
