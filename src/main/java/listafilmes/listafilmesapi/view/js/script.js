@@ -280,7 +280,6 @@ function onFinalizar() {
                 } else {
                     alert("Ocorreu um erro para salvar o empregado!");
                 }
-                
             }
         } catch (e) {
             alert('Ocorreu uma exceção: ' + e.description);
